@@ -294,10 +294,10 @@ nav .links a:hover::after{transform:scaleX(1);transform-origin:left}
 <!-- contact -->
 <section class="contact wrap" id="contact">
   <div class="eyebrow reveal" style="margin-bottom:34px">Let's work together</div>
-  <h2 class="reveal d1">Got an idea?<span class="serif italic"><a href="mailto:zhuyechen666@gmail.com" data-cursor="Email">Say hello ↗</a></span></h2>
+  <h2 class="reveal d1">Got an idea?<span class="serif italic"><a href="mailto:zhuyechen666@gmail.com" data-email data-cursor="Email">Say hello ↗</a></span></h2>
   <div class="contact-foot">
     <div class="socials reveal">
-      <a href="mailto:zhuyechen666@gmail.com">Email</a>
+      <a href="mailto:zhuyechen666@gmail.com" data-email>Email</a>
       <a href="#" >LinkedIn</a>
       <a href="#" >Instagram</a>
       <a href="#" >Behance</a>
@@ -306,36 +306,28 @@ nav .links a:hover::after{transform:scaleX(1);transform-origin:left}
   </div>
 </section>
 
+<script src="content.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script>
-/* ---------- projects data ---------- */
-const projects=[
-  {n:"01",t:"Inflatable Pajama",tag:"Wearable · Product",img:"assets/proj-pajama.jpg",wide:true},
-  {n:"02",t:"Plantform",tag:"Product · Sustainability",img:"assets/proj-plantform.jpg"},
-  {n:"03",t:"BrainCo Sleep Mask",tag:"Wearable · Internship",img:"assets/proj-brainco.jpg"},
-  {n:"04",t:"Plant Interfaces",tag:"Interaction · Research",img:"assets/proj-plant.jpg"},
-  {n:"05",t:"EmoFirefly",tag:"UX · Wellbeing",img:"assets/proj-emofirefly.png"},
-  {n:"06",t:"Brick as Currency",tag:"Material · Speculative",img:"assets/proj-brick.jpg",wide:true},
-  {n:"07",t:"Dream of Butterfly",tag:"Immersive · Spatial",img:"assets/proj-butterfly.png"},
-  {n:"08",t:"Pomodoro Timer",tag:"Product · CMF",img:"assets/proj-timer.jpg"},
-  {n:"09",t:"Divcap",tag:"Industrial · Concept",img:"assets/proj-divcap.png"},
-  {n:"10",t:"CNC Lamp",tag:"Fabrication · Lighting",img:"assets/proj-cnc.jpg"},
-  {n:"11",t:"Other Works",tag:"Selected Explorations",img:"assets/proj-other.jpg",wide:true},
-];
+/* ---------- 用 content.js 里的内容填充页面 ---------- */
 const grid=document.getElementById('grid');
-projects.forEach((p,i)=>{
+PROJECTS.forEach((p,i)=>{
+  const num=String(i+1).padStart(2,'0');
   const el=document.createElement('a');
   el.className='card reveal'+(p.wide?' wide':'');
-  el.href='#';
+  el.href='project.html?id='+p.id;          // 点击卡片 → 跳转到该项目详情页
   el.setAttribute('data-cursor','View');
   el.innerHTML=`
-    <div class="frame"><img src="${p.img}" alt="${p.t}" loading="lazy"><div class="arrow">↗</div></div>
+    <div class="frame"><img src="${p.cover}" alt="${p.title}" loading="lazy"><div class="arrow">↗</div></div>
     <div class="meta">
-      <div class="t"><span class="num">(${p.n})</span> ${p.t}</div>
-      <div class="tags">${p.tag}</div>
+      <div class="t"><span class="num">(${num})</span> ${p.title}</div>
+      <div class="tags">${p.tags}</div>
     </div>`;
   grid.appendChild(el);
 });
+// 顶部/联系区文字也来自 content.js
+document.querySelectorAll('[data-email]').forEach(a=>{a.href='mailto:'+SITE.email;});
+const wc=document.querySelector('.work-count');if(wc)wc.textContent='('+PROJECTS.length+' Projects)';
 
 /* ---------- preloader ---------- */
 const lc=document.getElementById('lcount');let n=0;

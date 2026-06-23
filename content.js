@@ -37,7 +37,7 @@ const UI = {
   heroTag:    { en:"Industrial & interaction designer crafting objects, interfaces and material futures.",
                 zh:"工业与交互设计师,专注于产品、界面与材料未来的创造。" },
   heroRole:   { en:"Yechen Zhu — a designer working between physical product, digital experience and research, from concept to crafted detail.",
-                zh:"朱叶尘 —— 一位游走于实体产品、数字体验与研究之间的设计师,从概念到每一处细节。" },
+                zh:"朱烨晨 —— 一位游走于实体产品、数字体验与研究之间的设计师,从概念到每一处细节。" },
   tagline:    { en:"Inspire · Innovate · Impact", zh:"启发 · 创新 · 影响" },
 
   aboutLabel: { en:"About", zh:"关于我" },

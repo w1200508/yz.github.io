@@ -164,7 +164,7 @@ const PROJECTS = [
     gallery:["assets/scentopia-c1.png","assets/scentopia-c4.png","assets/scentopia-c3.png","assets/scentopia-c5.jpg"],
   },
   {
-    id:"stingray", cover:"assets/stingray-1.png", wide:true, year:"2025",
+    id:"stingray", cover:"assets/stingray-shot3.png", wide:true, year:"2025",
     title:{en:"Stingray Exhibit",zh:"黄貂鱼互动展项"},
     tags:{en:"Interactive Exhibit · Virginia Aquarium",zh:"互动展项 · 弗吉尼亚水族馆"},
     subtitle:{en:"An interactive tail mechanism that lets visitors feel how a stingray moves.",
@@ -178,7 +178,7 @@ const PROJECTS = [
       {en:"I led the digital design — building the full 3D model in Rhino to define structure, proportions and fabrication details — then built the display enclosure with the team and independently wired and integrated the electronics for reliable on-site operation.",
        zh:"我主导了数字设计——在 Rhino 中搭建完整三维模型,确定结构、比例与制作细节——随后与团队一起从零搭建展示外壳,并独立完成电子元件的接线与集成,确保现场长期稳定运行。"},
     ],
-    gallery:["assets/stingray-1.png","assets/stingray-2.jpg","assets/stingray-3.jpg","assets/stingray-4.jpg"],
+    gallery:["assets/stingray-shot3.png","assets/stingray-shot2.png","assets/stingray-2.jpg","assets/stingray-3.jpg","assets/stingray-shot1.png","assets/stingray-slide26.jpg"],
   },
   {
     id:"camera", cover:"assets/camera-1.jpg", wide:false, year:"2025",

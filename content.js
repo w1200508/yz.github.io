@@ -164,7 +164,7 @@ const PROJECTS = [
     gallery:["assets/scentopia-c1.png","assets/scentopia-c4.png","assets/scentopia-c3.png","assets/scentopia-c5.jpg"],
   },
   {
-    id:"stingray", cover:"assets/stingray-shot3.png", wide:true, year:"2025",
+    id:"stingray", cover:"assets/stingray-3.jpg", wide:false, year:"2025",
     title:{en:"Stingray Exhibit",zh:"黄貂鱼互动展项"},
     tags:{en:"Interactive Exhibit · Virginia Aquarium",zh:"互动展项 · 弗吉尼亚水族馆"},
     subtitle:{en:"An interactive tail mechanism that lets visitors feel how a stingray moves.",

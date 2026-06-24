@@ -124,8 +124,8 @@ const RESUME = {
     { yr:"2025", name:{en:"Core77 Design Awards — Emerging Technologies, Student Notable",zh:"Core77 设计奖 —— 新兴技术 学生 Notable"}, org:{en:"Core77",zh:"Core77"} },
     { yr:"2024", name:{en:"Terra Carta Design Lab — Finalist",zh:"Terra Carta 设计实验室 —— 入围"}, org:{en:"HM King Charles III × Sir Jony Ive",zh:"查尔斯三世 × Jony Ive 爵士"} },
     { yr:"2025", name:{en:"Published at ACM TEI 2025",zh:"论文发表于 ACM TEI 2025"}, org:{en:"ACM TEI",zh:"ACM TEI"} },
-    { yr:"—",   name:{en:"International Design Awards (IDA) — Silver & Bronze",zh:"国际设计奖 (IDA) —— 银奖与铜奖"}, org:{en:"IDA",zh:"IDA"} },
-    { yr:"—",   name:{en:"UX Design Award (UXDA) — Bronze",zh:"UX 设计奖 (UXDA) —— 铜奖"}, org:{en:"UXDA",zh:"UXDA"} },
+    { yr:"2024", name:{en:"International Design Awards (IDA) — Silver & Bronze",zh:"国际设计奖 (IDA) —— 银奖与铜奖"}, org:{en:"IDA",zh:"IDA"} },
+    { yr:"2020", name:{en:"UX Design Award (UXDA) — Bronze",zh:"UX 设计奖 (UXDA) —— 铜奖"}, org:{en:"UXDA",zh:"UXDA"} },
   ],
 };
 
